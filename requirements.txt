@@ -1,0 +1,9 @@
+sounddevice 
+gitpython
+scipy
+numpy
+matplotlib
+subprocess
+time
+math
+sys
