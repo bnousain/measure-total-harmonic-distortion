@@ -1,9 +1,9 @@
-sounddevice 
-gitpython
-scipy
 numpy
 matplotlib
-subprocess
-time
 math
-sys
+time
+sounddevice
+scipy
+gitpython
+os
+ipylab
