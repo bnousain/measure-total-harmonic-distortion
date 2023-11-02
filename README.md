@@ -1,4 +1,4 @@
-git@gitlab.com:2023-FCPS-Science-Fair/measure-total-harmonic-distortion.git# Measure Total Harmonic Distortion
+### Measure Total Harmonic Distortion
 
 ## Getting started
 
