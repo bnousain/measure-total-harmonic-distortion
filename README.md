@@ -25,28 +25,41 @@ https://www.amazon.com/dp/B071HJ98Q6
 
 ## Configuration of Total Harmonic Distortion (THD) Measurement
 
-fs: Sampling frequency of external sound device. The sound device must be compatible with this sampling rate. 
+`fs`: Sampling frequency of external sound device. The sound device must be compatible with this sampling rate. 
 
 ### Experiment settings
-numTrials: Number of times to retest the same frequency
-expPurpose: Purpose of experiment
-deviceUnderTest: Name of Device Under Test (DUT)
+`numTrials`: Number of times to retest the same frequency
+
+`expPurpose`: Purpose of experiment
+
+`deviceUnderTest`: Name of Device Under Test (DUT)
+
 
 ### Tone generation settings
-duration: Length of time, in seconds to generate tone. Longer durations result in longer times to complete the characterization
-toneAmplitude: Amplitude of the tone to be output from audio jack. This value should be the value that results in using the full range of the ADC. This value is calculation by the calibration script.
-minFreqToTest: Minimum frequency of tone to generate (Hz)
-maxFreqToTest = Maximum frequency of tone to generate (Hz)
-freqSpacing = Spacing between consecutive frequencies (Hz)
+`duration`: Length of time, in seconds to generate tone. Longer durations result in longer times to complete the characterization
+
+`toneAmplitude`: Amplitude of the tone to be output from audio jack. This value should be the value that results in using the full range of the ADC. This value is calculation by the calibration script.
+
+`minFreqToTest`: Minimum frequency of tone to generate (Hz)
+
+`maxFreqToTest`: Maximum frequency of tone to generate (Hz)
+
+`freqSpacing`: Spacing between consecutive frequencies (Hz)
 
 ### Analysis settings
-fundFreqNotchWidthFract: Width of the brick wall notch filter in frequency domain when measuring distortion expressed as a fraction of the fundamental frequency
-fundFreqSearchWidthFract: Width of the range to search for max amplitude relative to fundamental frequency
-startBuffer = 0.25: Number of seconds from beginning of recorded file to ignore
-endBuffer = 0.25: Number of seconds from end of recorded file to ignore
-saturationThreshold: Max allowed value of the samples before declaring saturated input
-numSampsAtSatToAllow: Number of samples to allow above saturation threshold
-underDriveThreshold: If max value of signal is not above this then signal might not be present
+`fundFreqNotchWidthFract`: Width of the brick wall notch filter in frequency domain when measuring distortion expressed as a fraction of the fundamental frequency
+
+`fundFreqSearchWidthFract`: Width of the range to search for max amplitude relative to fundamental frequency
+
+`startBuffer`: Number of seconds from beginning of recorded file to ignore
+
+`endBuffer`: Number of seconds from end of recorded file to ignore
+
+`saturationThreshold`: Max allowed value of the samples before declaring saturated input
+
+`numSampsAtSatToAllow`: Number of samples to allow above saturation threshold
+
+`underDriveThreshold`: If max value of signal is not above this then signal might not be present
 
 ## Execution
 THD.ipynb is the script that contains the calibration and measurement sections. This script will save itself each 
