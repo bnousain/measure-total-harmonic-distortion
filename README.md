@@ -1,4 +1,4 @@
-### Measure Total Harmonic Distortion
+# Measure Total Harmonic Distortion
 
 ## Getting started
 
@@ -27,19 +27,19 @@ https://www.amazon.com/dp/B071HJ98Q6
 
 fs: Sampling frequency of external sound device. The sound device must be compatible with this sampling rate. 
 
-# experiment settings
+### Experiment settings
 numTrials: Number of times to retest the same frequency
 expPurpose: Purpose of experiment
 deviceUnderTest: Name of Device Under Test (DUT)
 
-# tone generation settings
+### Tone generation settings
 duration: Length of time, in seconds to generate tone. Longer durations result in longer times to complete the characterization
 toneAmplitude: Amplitude of the tone to be output from audio jack. This value should be the value that results in using the full range of the ADC. This value is calculation by the calibration script.
 minFreqToTest: Minimum frequency of tone to generate (Hz)
 maxFreqToTest = Maximum frequency of tone to generate (Hz)
 freqSpacing = Spacing between consecutive frequencies (Hz)
 
-# analysis settings
+### Analysis settings
 fundFreqNotchWidthFract: Width of the brick wall notch filter in frequency domain when measuring distortion expressed as a fraction of the fundamental frequency
 fundFreqSearchWidthFract: Width of the range to search for max amplitude relative to fundamental frequency
 startBuffer = 0.25: Number of seconds from beginning of recorded file to ignore
