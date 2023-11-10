@@ -7,3 +7,4 @@ scipy
 gitpython
 os
 ipylab
+hdf5storage
