@@ -1,5 +1,7 @@
 # Measure Total Harmonic Distortion
 
+This is a Jupyter Notebook that measures the Total Harmonic Distortion (THD) of audio devices. It plays a series of tone through the audio output port and simultaneously records the sound in the microphone port.
+
 ## Getting started
 
 There are 2 sections to this file:
